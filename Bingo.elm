@@ -42,7 +42,7 @@ entryList =
   ul [ ]
     [
       entryItem "Future-Proof" 100,
-      entryItem "Doing Agile" 200
+      entryItem "Doing Agile" 400
      ]
 
 

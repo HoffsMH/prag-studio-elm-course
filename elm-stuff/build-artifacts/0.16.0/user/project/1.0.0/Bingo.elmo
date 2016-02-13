@@ -20,7 +20,7 @@ Elm.Bingo.make = function (_elm) {
       _U.list([A2($Html.span,_U.list([$Html$Attributes.$class("phrase")]),_U.list([$Html.text(phrase)]))
               ,A2($Html.span,_U.list([$Html$Attributes.$class("points")]),_U.list([$Html.text($Basics.toString(points))]))]));
    });
-   var entryList = A2($Html.ul,_U.list([]),_U.list([A2(entryItem,"Future-Proof",100),A2(entryItem,"Doing Agile",200)]));
+   var entryList = A2($Html.ul,_U.list([]),_U.list([A2(entryItem,"Future-Proof",100),A2(entryItem,"Doing Agile",400)]));
    var pageFooter = A2($Html.footer,
    _U.list([]),
    _U.list([A2($Html.a,_U.list([$Html$Attributes.href("http://www.mhecker.com")]),_U.list([$Html.text("My Website")]))]));
