@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./Bingo.elm",
+  entry: "./index.js",
 
   module: {
     loaders: [{
