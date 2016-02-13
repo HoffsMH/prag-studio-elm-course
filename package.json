@@ -1,0 +1,19 @@
+{
+  "name": "bingo",
+  "version": "1.0.0",
+  "description": "output from prag studio intro course",
+  "main": "bingo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoffsMH/prag-studio-elm-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoffsMH/prag-studio-elm-course/issues"
+  },
+  "homepage": "https://github.com/HoffsMH/prag-studio-elm-course#readme"
+}
