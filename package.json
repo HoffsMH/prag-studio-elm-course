@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/HoffsMH/prag-studio-elm-course/issues"
   },
-  "homepage": "https://github.com/HoffsMH/prag-studio-elm-course#readme"
+  "homepage": "https://github.com/HoffsMH/prag-studio-elm-course#readme",
+  "dependencies": {
+    "elm-webpack-loader": "^2.0.0"
+  }
 }
