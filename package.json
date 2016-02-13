@@ -4,7 +4,8 @@
   "description": "output from prag studio intro course",
   "main": "bingo.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+ "watch": "chokidar '**/*.elm' -c 'elm make Main.elm --output elm.compiled.js'",
   },
   "repository": {
     "type": "git",
