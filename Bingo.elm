@@ -4,6 +4,10 @@ import Html.Attributes exposing (..)
 -- import Html.Events exposing (..)
 import String exposing (toUpper, repeat, trimRight)
 
+
+-- MODEL
+
+
 newEntry : a -> b -> c ->
           { id : c, phrase : a, points : b, wasSpoken : Bool }
 newEntry phrase points id =
@@ -66,6 +70,8 @@ entryList  entries =
   ul [ ] (List.map entryItem entries)
 
 
+-- VIEW
+
 
 view : { b | entries : List { b | phrase : String, points : a, id: number, wasSpoken: Bool } } -> Html
 view model =
@@ -75,6 +81,8 @@ view model =
       entryList model.entries,
       pageFooter
     ]
+
+-- WIRE IT ALL TOGETHER
 
 
 main : Html
