@@ -4,6 +4,16 @@ import Html.Attributes exposing (..)
 -- import Html.Events exposing (..)
 import String exposing (toUpper, repeat, trimRight)
 
+newEntry : a -> b -> c ->
+          { id : c, phrase : a, points : b, wasSpoken : Bool }
+newEntry phrase points id =
+  {
+    phrase    = phrase,
+    points    = points,
+    wasSpoken = False,
+    id        = id
+  }
+
 
 title : String -> Int -> Html
 title message times =
@@ -41,8 +51,8 @@ entryList : Html
 entryList =
   ul [ ]
     [
-      entryItem "Future-Proof" 100,
-      entryItem "Doing Agile" 600
+      entryItem (newEntry "Future-Proof" 100 1),
+      entryItem (newEntry "Doing Agile" 600 2)
      ]
 
 
