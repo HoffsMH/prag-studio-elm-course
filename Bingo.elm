@@ -38,12 +38,12 @@ pageFooter =
     ]
 
 
-entryItem : String -> a -> Html
-entryItem phrase points =
+entryItem : { b | phrase : String, points : a } -> Html
+entryItem entry =
   li [ ]
   [
-    span [ class "phrase"] [text phrase],
-    span [ class "points"] [text (toString points)]
+    span [ class "phrase"] [text entry.phrase],
+    span [ class "points"] [text (toString entry.points)]
   ]
 
 
