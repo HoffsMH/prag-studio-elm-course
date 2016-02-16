@@ -15,6 +15,20 @@ newEntry phrase points id =
   }
 
 
+initialModel : { entries : List
+  { id : number, 
+    phrase : String,
+    points : number',
+    wasSpoken : Bool }}
+initialModel =
+  { entries =
+    [ newEntry "Doing Agile" 200 2,
+      newEntry "In the Cloud" 300 3,
+      newEntry "Future-Proof" 100 1
+    ]
+  }
+
+
 title : String -> Int -> Html
 title message times =
   message ++ " "
