@@ -16,7 +16,7 @@ newEntry phrase points id =
 
 
 initialModel : { entries : List
-  { id : number, 
+  { id : number,
     phrase : String,
     points : number',
     wasSpoken : Bool }}
@@ -61,25 +61,22 @@ entryItem entry =
   ]
 
 
-entryList : Html
-entryList =
-  ul [ ]
-    [
-      entryItem (newEntry "Future-Proof" 100 1),
-      entryItem (newEntry "Doing Agile" 600 2)
-     ]
+entryList :  List { b | phrase : String, points : a } -> Html
+entryList  entries =
+  ul [ ] (List.map entryItem entries)
 
 
-view : Html
-view =
+
+view : { b | entries : List { b | phrase : String, points : a, id: number, wasSpoken: Bool } } -> Html
+view model =
   div [ id "container" ]
     [
       pageHeader,
-      entryList,
+      entryList model.entries,
       pageFooter
     ]
 
 
 main : Html
 main =
-  view
+  view initialModel
